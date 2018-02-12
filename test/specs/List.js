@@ -12,6 +12,10 @@ test.beforeEach(() => {
   })
 })
 
+test('List.vue shapshow', (t) => {
+  t.snapshot({ html: wrapper.html() })
+})
+
 test('List.vue to display list', (t) => {
   const $items = wrapper.findAll('li').wrappers
 

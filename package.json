@@ -11,7 +11,7 @@
     "generate": "nuxt generate",
     "lint": "eslint --ext .js,.vue --ignore-path .gitignore .",
     "precommit": "npm run lint",
-    "test": "yarn ava ./test/specs/*.js --verbose"
+    "test": "yarn ava --verbose"
   },
   "dependencies": {
     "@vue/test-utils": "^1.0.0-beta.11",
@@ -34,7 +34,11 @@
     "require": [
       "babel-register",
       "./test/setup.js"
-    ]
+    ],
+    "files": [
+      "./test/specs/*.js"
+    ],
+    "snapshotDir": "./test/snapshot"
   },
   "babel": {
     "presets": [

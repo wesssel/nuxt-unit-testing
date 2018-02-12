@@ -12,7 +12,7 @@ test.beforeEach(() => {
   })
 })
 
-test('List.vue shapshow', (t) => {
+test('List.vue snapshot', (t) => {
   t.snapshot({ html: wrapper.html() })
 })
 
